@@ -1,35 +1,5 @@
 SCRIPTS - SIMULAZIONE COMUNICAZIONE TCP CLIENT/SERVER: IN MODALITÀ IN CHIARO E MODALITÀ CIFRATA
 
-Questa cartella contiene script Python per simulare una comunicazione su socket TCP tra client e server, con la possibilità di osservare un attacco 
-Man-in-the-Middle (MITM) 🕵️ in due differenti scenari:
-  1. Comunicazione in chiaro (senza crittografia) 🔓
-  
-  Avvio dei file nel seguente ordine:
-  
-  1. server-no-crypto.py  
-  2. man-in-the-middle.py  
-  3. client-no-crypto.py  
-  
-  Descrizione:
-  - Comunicazione su socket TCP 📡  
-  - Messaggi trasmessi in chiaro  
-  - Il MITM può intercettare lo scambio di messaggi e leggere direttamente il contenuto  
-
-
-  2. Comunicazione cifrata (crittografia ibrida) 🔐
-  
-  Avvio dei file nel seguente ordine:
-  
-  1. server.py  
-  2. man-in-the-middle.py  
-  3. client.py  
-  
-  Descrizione:
-  - Comunicazione cifrata tra client e server  
-  - Utilizzo di crittografia ibrida (simmetrica + asimmetrica)  
-  - Il MITM può intercettare lo scambio di messaggi ma non può leggere i messaggi in chiaro  
-
-
 OBIETTIVI PRINCIPALI 🎯
 
 - Simulare comunicazione client-server su TCP  
@@ -39,3 +9,28 @@ OBIETTIVI PRINCIPALI 🎯
 NOTA ⚠️
 
 Il progetto ha scopo didattico e di simulazione.
+
+Questa cartella contiene script Python per simulare una comunicazione su socket TCP tra client e server, con la possibilità di osservare un attacco 
+Man-in-the-Middle (MITM) 🕵️ in due differenti scenari:
+  1. Comunicazione in chiaro (senza crittografia) 🔓 
+    Avvio dei file nel seguente ordine:
+      1. server-no-crypto.py  
+      2. man-in-the-middle.py  
+      3. client-no-crypto.py  
+    
+    Descrizione:
+      - Comunicazione su socket TCP 📡  
+      - Messaggi trasmessi in chiaro  
+      - Il MITM può intercettare lo scambio di messaggi e leggere direttamente il contenuto  
+
+
+  2. Comunicazione cifrata (crittografia ibrida) 🔐
+    Avvio dei file nel seguente ordine: 
+      1. server.py  
+      2. man-in-the-middle.py  
+      3. client.py  
+  
+    Descrizione:
+      - Comunicazione cifrata tra client e server  
+      - Utilizzo di crittografia ibrida (simmetrica + asimmetrica)  
+      - Il MITM può intercettare lo scambio di messaggi ma non può leggere i messaggi in chiaro  
